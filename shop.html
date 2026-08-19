@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop All Products | Rosaleigh Luxury Tallow Skincare</title>
+  <meta name="description" content="Shop handcrafted 100% natural tallow balms, nourishing face serums, restorative moisturisers, and purifying tallow soaps.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container">
+      <div class="inner">
+        <div class="announcement-item"><span>🌿</span> 100% Pure Grass-Fed Tallow Skincare</div>
+        <span class="announcement-divider">|</span>
+        <div class="announcement-item"><span>✨</span> Bespoke &amp; Wholesale Price Quotes Available</div>
+        <span class="announcement-divider">|</span>
+        <div class="announcement-item"><span>🇬🇧</span> Handcrafted in the UK</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <nav class="nav-menu">
+        <div class="has-dropdown">
+          <a href="shop.html" class="nav-link active">Shop ▼</a>
+          <div class="dropdown-menu">
+            <a href="shop.html?category=all" class="dropdown-item">All Products</a>
+            <a href="shop.html?category=balms" class="dropdown-item">Tallow Balms</a>
+            <a href="shop.html?category=serums" class="dropdown-item">Face Serums</a>
+            <a href="shop.html?category=foot-balm" class="dropdown-item">Foot &amp; Leg Balms</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="ingredients.html" class="nav-link">Our Ingredients</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <a href="index.html" class="header-logo">
+        <img src="images/Logo.png" alt="Rosaleigh" class="logo-img">
+      </a>
+
+      <div class="header-actions">
+        <div class="currency-selector">
+          <button type="button" class="currency-btn" id="currency-toggle-btn">
+            <span class="flag-icon" id="current-currency-flag">🇬🇧</span>
+            <span id="current-currency-label">GBP £</span>
+          </button>
+        </div>
+        <button type="button" class="action-btn trigger-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+        <button type="button" class="action-btn trigger-cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 01-8 0"></path></svg><span class="cart-badge">1</span></button>
+        <button type="button" class="mobile-toggle" id="mobile-menu-toggle"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>&gt;</span> <span class="current">Shop Collection</span>
+      </div>
+      <div class="page-hero-grid">
+        <div>
+          <h1 class="page-hero-title">Shop The <span class="text-olive">Collection</span></h1>
+          <p class="page-hero-lead">Pure Ancestral Skincare Formulated for Modern Radiance</p>
+          <p class="page-hero-text">
+            Handcrafted with nutrient-dense grass-fed British tallow, ceramides, zinc, magnesium, and restorative botanical oils.
+          </p>
+        </div>
+        <div class="page-hero-media">
+          <img src="assets/images/hero/hero-products.png" alt="Rosaleigh Product Collection">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organic Wave Curve -->
+  <div class="curve-divider curve-divider-bottom" style="background: var(--lime-gradient);">
+    <svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none">
+      <path d="M0,65 C380,105 740,95 1060,25 C1220,-8 1360,30 1440,55 L1440,120 L0,120 Z" fill="#FFFFFF"></path>
+    </svg>
+  </div>
+
+  <!-- Shop Main Catalog Section -->
+  <section class="bestsellers-section" style="background-color: #FFFFFF; padding-top: 2rem;">
+    <div class="container">
+      
+      <!-- Filter Bar -->
+      <div class="shop-filter-bar">
+        <div class="category-tabs" id="category-filter-tabs">
+          <button type="button" class="tab-btn active" data-cat="all">All Products (6)</button>
+          <button type="button" class="tab-btn" data-cat="balm">Balms &amp; Tallow</button>
+          <button type="button" class="tab-btn" data-cat="anti-aging">Anti-Aging</button>
+          <button type="button" class="tab-btn" data-cat="cleanser">Cleansers</button>
+        </div>
+        <div class="sort-select-wrap">
+          <label for="sort-by">Sort by:</label>
+          <select id="sort-by" class="sort-select">
+            <option value="featured">Featured Collection</option>
+            <option value="rating">Highest Rated</option>
+            <option value="name">Name: A to Z</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Catalog Grid -->
+      <div class="products-grid" id="catalog-products-grid">
+        
+        <!-- Product 1: Heritage Tallow Balm -->
+        <div class="product-card" data-category="balm" data-rating="5.0" data-name="Heritage Tallow Balm">
+          <span class="badge-tag">Ceramide Formula</span>
+          <div class="product-thumb-wrap">
+            <img src="Images/1.png" alt="Rosaleigh Heritage Tallow Balm (Ceramide)">
+            <div class="quick-action-overlay">
+              <a href="contact.html?product=Heritage+Tallow+Balm" class="quick-action-btn" data-quote-trigger data-product="Heritage Tallow Balm (60ml)">
+                Ask for Price
+              </a>
+            </div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Heritage Tallow Balm</h3>
+            <p class="product-subtitle">Calm • Restore • Protect (60ml / 2oz)</p>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(254)</span>
+            </div>
+            <div class="product-quote-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <span>Ask for Price Quote</span>
+            </div>
+            <a href="contact.html?product=Heritage+Tallow+Balm" class="btn-request-quote" data-quote-trigger data-product="Heritage Tallow Balm (60ml)">
+              Request a Quote
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 2: Whipped Tallow Balm -->
+        <div class="product-card" data-category="balm" data-rating="5.0" data-name="Whipped Tallow Balm">
+          <span class="badge-tag">Whipped Texture</span>
+          <div class="product-thumb-wrap">
+            <img src="Images/2.png" alt="Rosaleigh Whipped Tallow Balm (Ceramide)">
+            <div class="quick-action-overlay">
+              <a href="contact.html?product=Whipped+Tallow+Balm" class="quick-action-btn" data-quote-trigger data-product="Whipped Tallow Balm (60ml)">
+                Ask for Price
+              </a>
+            </div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Whipped Tallow Balm</h3>
+            <p class="product-subtitle">Light &amp; Nourishing Ceramide (60ml / 2oz)</p>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(218)</span>
+            </div>
+            <div class="product-quote-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <span>Ask for Price Quote</span>
+            </div>
+            <a href="contact.html?product=Whipped+Tallow+Balm" class="btn-request-quote" data-quote-trigger data-product="Whipped Tallow Balm (60ml)">
+              Request a Quote
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 3: Heritage Foot & Leg Balm -->
+        <div class="product-card" data-category="balm" data-rating="4.9" data-name="Heritage Foot and Leg Balm">
+          <span class="badge-tag">Magnesium &amp; Zinc</span>
+          <div class="product-thumb-wrap">
+            <img src="Images/3.png" alt="Rosaleigh Foot &amp; Leg Balm Pure Lavender">
+            <div class="quick-action-overlay">
+              <a href="contact.html?product=Foot+and+Leg+Balm" class="quick-action-btn" data-quote-trigger data-product="Heritage Foot &amp; Leg Balm (60ml)">
+                Ask for Price
+              </a>
+            </div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Heritage Foot &amp; Leg Balm</h3>
+            <p class="product-subtitle">Pure Lavender • Soften • Revive (60ml)</p>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(194)</span>
+            </div>
+            <div class="product-quote-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <span>Ask for Price Quote</span>
+            </div>
+            <a href="contact.html?product=Foot+and+Leg+Balm" class="btn-request-quote" data-quote-trigger data-product="Heritage Foot &amp; Leg Balm (60ml)">
+              Request a Quote
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 4: Anti Aging Day Cream -->
+        <div class="product-card" data-category="anti-aging" data-rating="4.9" data-name="Anti Aging Day Cream">
+          <span class="badge-tag">Day Care Radiance</span>
+          <div class="product-thumb-wrap">
+            <img src="Images/4.png" alt="Rosaleigh Anti Aging Day Cream">
+            <div class="quick-action-overlay">
+              <a href="contact.html?product=Anti+Aging+Day+Cream" class="quick-action-btn" data-quote-trigger data-product="Anti Aging Day Cream (50ml)">
+                Ask for Price
+              </a>
+            </div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Anti Aging Day Cream</h3>
+            <p class="product-subtitle">Firm • Protect • Glowing (50ml / 1.69oz)</p>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(176)</span>
+            </div>
+            <div class="product-quote-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <span>Ask for Price Quote</span>
+            </div>
+            <a href="contact.html?product=Anti+Aging+Day+Cream" class="btn-request-quote" data-quote-trigger data-product="Anti Aging Day Cream (50ml)">
+              Request a Quote
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 5: Anti Aging Night Cream -->
+        <div class="product-card" data-category="anti-aging" data-rating="5.0" data-name="Anti Aging Night Cream">
+          <span class="badge-tag">Overnight Repair</span>
+          <div class="product-thumb-wrap">
+            <img src="Images/5.png" alt="Rosaleigh Anti Aging Night Cream">
+            <div class="quick-action-overlay">
+              <a href="contact.html?product=Anti+Aging+Night+Cream" class="quick-action-btn" data-quote-trigger data-product="Anti Aging Night Cream (50ml)">
+                Ask for Price
+              </a>
+            </div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Anti Aging Night Cream</h3>
+            <p class="product-subtitle">Repair • Renew • Rejuvenate (50ml)</p>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(162)</span>
+            </div>
+            <div class="product-quote-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <span>Ask for Price Quote</span>
+            </div>
+            <a href="contact.html?product=Anti+Aging+Night+Cream" class="btn-request-quote" data-quote-trigger data-product="Anti Aging Night Cream (50ml)">
+              Request a Quote
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 6: Cleansing Lotion -->
+        <div class="product-card" data-category="cleanser" data-rating="4.8" data-name="Cleansing Lotion">
+          <span class="badge-tag">Purifies &amp; Balances</span>
+          <div class="product-thumb-wrap">
+            <img src="Images/6.png" alt="Rosaleigh Cleansing Lotion">
+            <div class="quick-action-overlay">
+              <a href="contact.html?product=Cleansing+Lotion" class="quick-action-btn" data-quote-trigger data-product="Cleansing Lotion (60ml)">
+                Ask for Price
+              </a>
+            </div>
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Cleansing Lotion</h3>
+            <p class="product-subtitle">Purifies • Balances • Glowing (60ml / 2oz)</p>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(145)</span>
+            </div>
+            <div class="product-quote-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <span>Ask for Price Quote</span>
+            </div>
+            <a href="contact.html?product=Cleansing+Lotion" class="btn-request-quote" data-quote-trigger data-product="Cleansing Lotion (60ml)">
+              Request a Quote
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <img src="images/Logo.png" alt="Rosaleigh" class="footer-logo-img">
+          <p class="footer-bio">Handcrafted tallow-based skincare made with nature's finest ingredients. Made in the UK.</p>
+        </div>
+        <div class="footer-col"><h4>Shop</h4><ul class="footer-nav"><li><a href="shop.html">All Products</a></li><li><a href="shop.html">Bestsellers</a></li></ul></div>
+        <div class="footer-col"><h4>Customer Care</h4><ul class="footer-nav"><li><a href="contact.html">Shipping</a></li><li><a href="contact.html#faq">FAQ</a></li></ul></div>
+        <div class="footer-col"><h4>About</h4><ul class="footer-nav"><li><a href="about.html">Our Story</a></li><li><a href="ingredients.html">Our Ingredients</a></li></ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul class="footer-nav"><li><a href="about.html">Terms</a></li><li><a href="about.html">Privacy</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Rosaleigh. All rights reserved.</div>
+        <div class="payment-methods"><span class="payment-badge">VISA</span><span class="payment-badge">Mastercard</span><span class="payment-badge"> Pay</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer-backdrop" id="cart-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-header"><h3>Your Bag</h3><button type="button" class="cart-close-btn" id="cart-close-btn">&times;</button></div>
+    <div class="shipping-meter-wrap"><div id="shipping-meter-text">Free UK shipping on orders over £50</div><div class="meter-bar"><div class="meter-fill" id="shipping-meter-fill"></div></div></div>
+    <div class="cart-items-container" id="cart-items-list"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal-row"><span>Subtotal:</span><span id="cart-subtotal-val">£0.00</span></div>
+      <button type="button" class="btn btn-primary cart-checkout-btn">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Scripts -->
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Category Filtering Script
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.getAttribute('data-cat');
+        document.querySelectorAll('.product-card').forEach(card => {
+          if (cat === 'all' || card.getAttribute('data-category') === cat) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
