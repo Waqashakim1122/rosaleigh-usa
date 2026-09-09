@@ -1486,8 +1486,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FFFFFF;
   border: 1px solid var(--border-subtle);
   border-radius: 4px;
-  padding: 0.25rem 0.5rem;
-  height: 26px;
+  padding: 0.3rem 0.65rem;
+  height: 28px;
   color: #3A4A40;
 }
 
