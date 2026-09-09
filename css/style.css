@@ -712,19 +712,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .trust-badge-icon {
   flex-shrink: 0;
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background-color: var(--bg-olive-subtle);
+  background: rgba(183, 146, 103, 0.12);
+  border: 1px solid rgba(183, 146, 103, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-olive);
+  color: #B79267;
 }
 
 .trust-badge-icon svg {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
 }
 
 .trust-badge-text {
