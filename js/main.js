@@ -79,12 +79,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentFlag = document.getElementById('current-currency-flag');
 
   const exchangeRates = {
-    'GBP': { symbol: '£', rate: 1.0, flag: '🇬🇧' },
-    'USD': { symbol: '$', rate: 1.30, flag: '🇺🇸' },
-    'EUR': { symbol: '€', rate: 1.18, flag: '🇪🇺' }
+    'USD': { symbol: '$', rate: 1.0, flag: '🇺🇸' },
+    'GBP': { symbol: '£', rate: 0.77, flag: '🇬🇧' },
+    'EUR': { symbol: '€', rate: 0.91, flag: '🇪🇺' }
   };
 
-  let activeCurrency = 'GBP';
+  let activeCurrency = 'USD';
 
   currencyOptions.forEach(opt => {
     opt.addEventListener('click', (e) => {
