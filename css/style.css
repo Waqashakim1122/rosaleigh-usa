@@ -1633,18 +1633,23 @@ h1, h2, h3, h4, h5, h6 {
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  border: 1px solid rgba(var(--primary-olive-rgb), 0.35);
-  background-color: var(--bg-warm-cream);
+  border: 1px solid rgba(183, 146, 103, 0.3);
+  background: rgba(183, 146, 103, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-olive);
+  color: #B79267;
   margin-bottom: 1.25rem;
   transition: all var(--transition-smooth);
 }
 
+.value-circle-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
 .value-card:hover .value-circle-icon {
-  background-color: var(--primary-olive);
+  background-color: #B79267;
   color: #FFFFFF;
   transform: scale(1.08);
 }
@@ -1697,36 +1702,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
 }
 
-/* Founder's Note Section */
-.founder-note-section {
-  padding: 5.5rem 0;
-  background-color: var(--bg-white);
-}
-
-.founder-note-card {
-  max-width: 720px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  padding: 0 1rem;
-}
-
-.founder-quote-mark {
-  display: block;
-  font-family: var(--font-serif);
-  font-size: 5rem;
-  line-height: 1;
-  color: #B79267;
-  opacity: 0.5;
-  margin-bottom: -1rem;
-}
-
-.founder-note-card .section-header h2 {
-  font-size: 2.1rem;
-  display: block;
-  justify-content: center;
-}
-
+/* Founder's Note styling (used inside Our Story section) */
 .founder-note-intro {
   font-family: var(--font-serif);
   font-size: 1.375rem;
@@ -1736,21 +1712,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-.founder-note-card p {
-  font-size: 1.0625rem;
-  line-height: 1.8;
-  color: var(--text-body);
-  margin-bottom: 1.5rem;
-  text-align: left;
-}
-
 .founder-signature {
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-style: italic;
   color: #B79267;
-  text-align: center !important;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 0 !important;
 }
 
@@ -1777,15 +1744,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .promise-icon {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background: rgba(183, 146, 103, 0.12);
+  border: 1px solid rgba(183, 146, 103, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-olive);
+  color: #B79267;
   flex-shrink: 0;
+}
+
+.promise-icon svg {
+  width: 22px;
+  height: 22px;
 }
 
 .promise-card h3 {
