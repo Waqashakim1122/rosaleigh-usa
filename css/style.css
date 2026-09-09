@@ -40,6 +40,11 @@
   --star-gold: #B79267;
   --badge-gold: #B79267;
   
+  /* Buttons — matched to UK "Primary button" theme setting */
+  --btn-primary-bg: #3A4A40;
+  --btn-primary-text: #F9FAF8;
+  --btn-primary-hover: #4E6153;
+  
   /* Typography — matched to UK (Shopify) theme settings */
   --font-serif: 'Fraunces', Georgia, serif;
   --font-sans: 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -218,16 +223,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-  background-color: var(--primary-olive);
-  color: #FFFFFF;
-  box-shadow: 0 4px 14px rgba(var(--primary-olive-rgb), 0.25);
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  box-shadow: 0 4px 14px rgba(58, 74, 64, 0.25);
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-olive-dark);
+  background-color: var(--btn-primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(var(--primary-olive-rgb), 0.35);
-  color: #FFFFFF;
+  box-shadow: 0 6px 20px rgba(58, 74, 64, 0.35);
+  color: var(--btn-primary-text);
 }
 
 .btn-outline {
@@ -615,8 +620,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-content .eyebrow {
   display: inline-block;
-  background: rgba(20, 34, 5, 0.12);
-  color: #142205;
+  background: rgba(249, 250, 248, 0.15);
+  color: #F9FAF8;
   font-weight: 700;
   border-radius: var(--radius-pill);
   padding: 0.35rem 1rem;
@@ -629,25 +634,36 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.12;
   font-weight: 600;
   margin-bottom: 1.5rem;
-  color: #142205;
+  color: #F9FAF8;
 }
 
 .hero-title span.glow {
-  color: #FFFFFF;
+  color: #DDBF8E;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
   font-style: italic;
 }
 
 .hero-description {
   font-size: 1.15rem;
-  color: #1E3307;
+  color: rgba(249, 250, 248, 0.85);
   margin-bottom: 2.25rem;
   line-height: 1.65;
 }
 
 .hero-description strong {
-  color: #0E1803;
+  color: #F9FAF8;
   font-weight: 700;
+}
+
+.hero-content .btn-primary {
+  background-color: var(--primary-olive);
+  color: #2A342E;
+  box-shadow: 0 4px 14px rgba(var(--primary-olive-rgb), 0.3);
+}
+
+.hero-content .btn-primary:hover {
+  background-color: var(--primary-olive-dark);
+  color: #2A342E;
 }
 
 .hero-image-wrap {
@@ -915,13 +931,13 @@ h1, h2, h3, h4, h5, h6 {
   gap: 0.5rem;
   padding: 0.75rem 1.25rem;
   background: var(--lime-gradient);
-  color: #142205;
+  color: #F9FAF8;
   font-size: 0.875rem;
   font-weight: 700;
   border-radius: var(--radius-pill);
   transition: all var(--transition-fast);
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(116, 219, 78, 0.25);
+  box-shadow: 0 4px 12px rgba(43, 85, 59, 0.3);
   border: none;
   cursor: pointer;
 }
