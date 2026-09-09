@@ -18,7 +18,7 @@
         <span class="announcement-divider">|</span>
         <div class="announcement-item"><span>✨</span> Bespoke &amp; Wholesale Price Quotes Available</div>
         <span class="announcement-divider">|</span>
-        <div class="announcement-item"><span>🇬🇧</span> Handcrafted in the UK</div>
+        <div class="announcement-item"><span>🇺🇸</span> Handcrafted in the USA</div>
       </div>
     </div>
   </div>
@@ -26,14 +26,23 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container header-container">
+      
+      <!-- Left Navigation Menu -->
       <nav class="nav-menu">
         <div class="has-dropdown">
-          <a href="shop.html" class="nav-link active">Shop ▼</a>
+          <a href="shop.html" class="nav-link active">
+            Shop
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </a>
           <div class="dropdown-menu">
             <a href="shop.html?category=all" class="dropdown-item">All Products</a>
             <a href="shop.html?category=balms" class="dropdown-item">Tallow Balms</a>
             <a href="shop.html?category=serums" class="dropdown-item">Face Serums</a>
-            <a href="shop.html?category=foot-balm" class="dropdown-item">Foot &amp; Leg Balms</a>
+            <a href="shop.html?category=moisturisers" class="dropdown-item">Moisturisers</a>
+            <a href="shop.html?category=soaps" class="dropdown-item">Tallow Soaps</a>
+            <a href="shop.html?category=bundles" class="dropdown-item">Bundles &amp; Sets</a>
           </div>
         </div>
         <a href="about.html" class="nav-link">About Us</a>
@@ -41,21 +50,69 @@
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
-      <a href="index.html" class="header-logo">
-        <img src="images/Logo.png" alt="Rosaleigh" class="logo-img">
+      <!-- Center Logo -->
+      <a href="index.html" class="header-logo" aria-label="Rosaleigh Home">
+        <img src="images/Logo.png" alt="Rosaleigh Organic &amp; Natural" class="logo-img">
       </a>
 
+      <!-- Right Header Actions -->
       <div class="header-actions">
+        <!-- Currency Selector -->
         <div class="currency-selector">
-          <button type="button" class="currency-btn" id="currency-toggle-btn">
-            <span class="flag-icon" id="current-currency-flag">🇬🇧</span>
-            <span id="current-currency-label">GBP £</span>
+          <button type="button" class="currency-btn" id="currency-toggle-btn" aria-label="Select Currency">
+            <span class="flag-icon" id="current-currency-flag">us</span>
+            <span id="current-currency-label">USD $</span>
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
           </button>
+          <div class="currency-dropdown">
+            <button type="button" class="currency-option" data-currency="GBP">
+              <span>🇬🇧</span> GBP (£)
+            </button>
+            <button type="button" class="currency-option" data-currency="USD">
+              <span>🇺🇸</span> USD ($)
+            </button>
+            <button type="button" class="currency-option" data-currency="EUR">
+              <span>🇪🇺</span> EUR (€)
+            </button>
+          </div>
         </div>
-        <button type="button" class="action-btn trigger-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
-        <button type="button" class="action-btn trigger-cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 01-8 0"></path></svg><span class="cart-badge">1</span></button>
-        <button type="button" class="mobile-toggle" id="mobile-menu-toggle"><span></span><span></span><span></span></button>
+
+        <!-- Account Link -->
+        <a href="contact.html" class="action-btn" aria-label="Account">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+
+        <!-- Search Button -->
+        <button type="button" class="action-btn trigger-search" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Cart Drawer Button -->
+        <button type="button" class="action-btn trigger-cart" aria-label="View Bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 01-8 0"></path>
+          </svg>
+          <span class="cart-badge">1</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="mobile-toggle" id="mobile-menu-toggle" aria-label="Open Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
+
     </div>
   </header>
 
@@ -70,7 +127,7 @@
           <h1 class="page-hero-title">Shop The <span class="text-olive">Collection</span></h1>
           <p class="page-hero-lead">Pure Ancestral Skincare Formulated for Modern Radiance</p>
           <p class="page-hero-text">
-            Handcrafted with nutrient-dense grass-fed British tallow, ceramides, zinc, magnesium, and restorative botanical oils.
+            Handcrafted with nutrient-dense grass-fed tallow, ceramides, zinc, magnesium, and restorative botanical oils.
           </p>
         </div>
         <div class="page-hero-media">
@@ -300,20 +357,97 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
+      
       <div class="footer-top-grid">
+        
+        <!-- Col 1: Brand & Bio -->
         <div class="footer-brand">
           <img src="images/Logo.png" alt="Rosaleigh" class="footer-logo-img">
-          <p class="footer-bio">Handcrafted tallow-based skincare made with nature's finest ingredients. Made in the UK.</p>
+          <p class="footer-bio">
+            Handcrafted tallow-based skincare made with nature's finest ingredients. Made in the USA.
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://facebook.com" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://tiktok.com" class="social-link" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"></path>
+              </svg>
+            </a>
+            <a href="https://pinterest.com" class="social-link" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="footer-col"><h4>Shop</h4><ul class="footer-nav"><li><a href="shop.html">All Products</a></li><li><a href="shop.html">Bestsellers</a></li></ul></div>
-        <div class="footer-col"><h4>Customer Care</h4><ul class="footer-nav"><li><a href="contact.html">Shipping</a></li><li><a href="contact.html#faq">FAQ</a></li></ul></div>
-        <div class="footer-col"><h4>About</h4><ul class="footer-nav"><li><a href="about.html">Our Story</a></li><li><a href="ingredients.html">Our Ingredients</a></li></ul></div>
-        <div class="footer-col"><h4>Legal</h4><ul class="footer-nav"><li><a href="about.html">Terms</a></li><li><a href="about.html">Privacy</a></li></ul></div>
+
+        <!-- Col 2: Shop -->
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul class="footer-nav">
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="shop.html">Bestsellers</a></li>
+            <li><a href="shop.html">Bundles &amp; Save</a></li>
+            <li><a href="shop.html">Gift Cards</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Care -->
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-nav">
+            <li><a href="contact.html">Shipping Information</a></li>
+            <li><a href="contact.html">Returns &amp; Refunds</a></li>
+            <li><a href="contact.html#faq">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: About -->
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul class="footer-nav">
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="ingredients.html">Our Ingredients</a></li>
+            <li><a href="about.html#values">Sustainability</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Legal -->
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="footer-nav">
+            <li><a href="about.html">Terms &amp; Conditions</a></li>
+            <li><a href="about.html">Privacy Policy</a></li>
+            <li><a href="about.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+
       </div>
+
+      <!-- Footer Bottom -->
       <div class="footer-bottom">
         <div>© 2026 Rosaleigh. All rights reserved.</div>
-        <div class="payment-methods"><span class="payment-badge">VISA</span><span class="payment-badge">Mastercard</span><span class="payment-badge"> Pay</span></div>
+        <div class="payment-methods">
+          <span class="payment-badge"><strong>VISA</strong></span>
+          <span class="payment-badge"><strong>Mastercard</strong></span>
+          <span class="payment-badge"><strong> Pay</strong></span>
+          <span class="payment-badge"><strong>G Pay</strong></span>
+        </div>
       </div>
+
     </div>
   </footer>
 
@@ -321,10 +455,10 @@
   <div class="cart-drawer-backdrop" id="cart-backdrop"></div>
   <aside class="cart-drawer" id="cart-drawer">
     <div class="cart-header"><h3>Your Bag</h3><button type="button" class="cart-close-btn" id="cart-close-btn">&times;</button></div>
-    <div class="shipping-meter-wrap"><div id="shipping-meter-text">Free UK shipping on orders over £50</div><div class="meter-bar"><div class="meter-fill" id="shipping-meter-fill"></div></div></div>
+    <div class="shipping-meter-wrap"><div id="shipping-meter-text">Free US shipping on orders over $70</div><div class="meter-bar"><div class="meter-fill" id="shipping-meter-fill"></div></div></div>
     <div class="cart-items-container" id="cart-items-list"></div>
     <div class="cart-footer">
-      <div class="cart-subtotal-row"><span>Subtotal:</span><span id="cart-subtotal-val">£0.00</span></div>
+      <div class="cart-subtotal-row"><span>Subtotal:</span><span id="cart-subtotal-val">$0.00</span></div>
       <button type="button" class="btn btn-primary cart-checkout-btn">Checkout</button>
     </div>
   </aside>
