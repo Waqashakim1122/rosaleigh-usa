@@ -891,9 +891,9 @@ h1, h2, h3, h4, h5, h6 {
   gap: 0.4rem;
   font-size: 0.8125rem;
   font-weight: 700;
-  color: #1F380A;
-  background-color: rgba(127, 224, 88, 0.2);
-  border: 1px solid rgba(116, 219, 78, 0.45);
+  color: #3A4A40;
+  background-color: rgba(58, 74, 64, 0.08);
+  border: 1px solid rgba(58, 74, 64, 0.2);
   padding: 0.4rem 0.9rem;
   border-radius: var(--radius-pill);
   margin-top: auto;
@@ -904,7 +904,7 @@ h1, h2, h3, h4, h5, h6 {
 .product-quote-badge svg {
   width: 14px;
   height: 14px;
-  color: #1F380A;
+  color: #3A4A40;
 }
 
 .btn-request-quote {
