@@ -3,47 +3,47 @@
    Signature Organic Curved Theme & High-End Editorial Aesthetics
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Cinzel:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Karla:wght@300;400;500;600;700&family=Cormorant:wght@400;600&display=swap');
 
 :root {
-  /* Colors */
-  --bg-warm-cream: #FAF7F2;
-  --bg-page: #FAF7F2;
+  /* Colors — matched to UK (Shopify) theme settings */
+  --bg-warm-cream: #F9FAF8;
+  --bg-page: #F9FAF8;
   --bg-white: #FFFFFF;
   --bg-card: #FFFFFF;
-  --bg-olive-tint: #7FE058;
-  --bg-olive-subtle: #F6F8E8;
-  --bg-announcement: #E1DE59;
-  --bg-footer: #F9F6EE;
+  --bg-olive-tint: #DEE4D6;
+  --bg-olive-subtle: #DEE4D6;
+  --bg-announcement: #2B553B;
+  --bg-footer: #2B553B;
   
-  --bg-bright-lime: #7FE058;
-  --bg-bright-lime-dark: #68D638;
-  --bg-bright-lime-light: #9DE85C;
-  --lime-gradient: linear-gradient(135deg, #74DB4E 0%, #7FE058 45%, #9BE75B 100%);
-  --lime-gradient-radial: radial-gradient(circle at 80% 30%, #A8EB5E 0%, #7FE058 50%, #68D638 100%);
+  --bg-bright-lime: #B79267;
+  --bg-bright-lime-dark: #9C7A50;
+  --bg-bright-lime-light: #C9A97F;
+  --lime-gradient: linear-gradient(135deg, #2B553B 0%, #3A4A40 45%, #4E6153 100%);
+  --lime-gradient-radial: radial-gradient(circle at 80% 30%, #4E6153 0%, #3A4A40 50%, #2B553B 100%);
   
-  --primary-olive: #8E9833;
-  --primary-olive-dark: #737C22;
-  --primary-olive-light: #A4AE3D;
-  --primary-olive-rgb: 142, 152, 51;
+  --primary-olive: #B79267;
+  --primary-olive-dark: #9C7A50;
+  --primary-olive-light: #C9A97F;
+  --primary-olive-rgb: 183, 146, 103;
   
-  --text-dark: #22231E;
-  --text-charcoal: #181816;
-  --text-body: #55574E;
-  --text-muted: #7E8075;
-  --text-announcement: #2E3314;
+  --text-dark: #2A342E;
+  --text-charcoal: #3A4A40;
+  --text-body: #4A564D;
+  --text-muted: #7A9680;
+  --text-announcement: #F9FAF8;
   
-  --border-subtle: #ECE8DD;
-  --border-card: #E5E0D2;
-  --border-active: #8E9833;
+  --border-subtle: #9FAE96;
+  --border-card: #DEE4D6;
+  --border-active: #B79267;
   
-  --star-gold: #8E9833;
-  --badge-gold: #8E9833;
+  --star-gold: #B79267;
+  --badge-gold: #B79267;
   
-  /* Typography */
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-display: 'Playfair Display', Georgia, serif;
+  /* Typography — matched to UK (Shopify) theme settings */
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Cormorant', Georgia, serif;
   
   /* Shadows & Radius */
   --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.04);
@@ -1092,8 +1092,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background-color: #142205;
-  color: #7FE058;
+  background-color: #2B553B;
+  color: #B79267;
   display: flex;
   align-items: center;
   justify-content: center;
