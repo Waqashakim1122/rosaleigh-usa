@@ -4,7 +4,7 @@
 
 const RosaleighCart = (() => {
   const STORAGE_KEY = 'rosaleigh_cart_v1';
-  const FREE_SHIPPING_THRESHOLD = 50.0; // £50 Free shipping in UK
+  const FREE_SHIPPING_THRESHOLD = 70.0; // $70 Free shipping in the US
   
   // Default sample cart items if first time
   const defaultItems = [
@@ -112,7 +112,7 @@ const RosaleighCart = (() => {
           <img src="${item.image}" alt="${item.name}" class="cart-item-img">
           <div class="cart-item-info">
             <h4 class="cart-item-title">${item.name}</h4>
-            <div class="cart-item-price">£${(item.price * item.quantity).toFixed(2)}</div>
+            <div class="cart-item-price">$${(item.price * item.quantity).toFixed(2)}</div>
             <div class="qty-control">
               <button class="qty-btn" onclick="RosaleighCart.updateQty('${item.id}', -1)">-</button>
               <span class="qty-val">${item.quantity}</span>
@@ -130,7 +130,7 @@ const RosaleighCart = (() => {
     const subtotal = getSubtotal();
     const subtotalEl = document.getElementById('cart-subtotal-val');
     if (subtotalEl) {
-      subtotalEl.textContent = `£${subtotal.toFixed(2)}`;
+      subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
     }
 
     // Free Shipping Progress
@@ -138,12 +138,12 @@ const RosaleighCart = (() => {
     const meterFill = document.getElementById('shipping-meter-fill');
     if (meterEl && meterFill) {
       if (subtotal >= FREE_SHIPPING_THRESHOLD) {
-        meterEl.innerHTML = `🎉 <strong>Congratulations!</strong> You qualify for <strong>FREE UK Delivery</strong>!`;
+        meterEl.innerHTML = `🎉 <strong>Congratulations!</strong> You qualify for <strong>FREE US Delivery</strong>!`;
         meterFill.style.width = '100%';
       } else {
         const remaining = (FREE_SHIPPING_THRESHOLD - subtotal).toFixed(2);
         const percent = Math.min(100, Math.round((subtotal / FREE_SHIPPING_THRESHOLD) * 100));
-        meterEl.innerHTML = `Add <strong>£${remaining}</strong> more for <strong>FREE UK Delivery</strong>`;
+        meterEl.innerHTML = `Add <strong>$${remaining}</strong> more for <strong>FREE US Delivery</strong>`;
         meterFill.style.width = `${percent}%`;
       }
     }
