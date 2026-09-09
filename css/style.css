@@ -796,14 +796,14 @@ h1, h2, h3, h4, h5, h6 {
   top: 14px;
   left: 14px;
   background: var(--lime-gradient);
-  color: #142205;
+  color: #F9FAF8;
   font-size: 0.6875rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 0.3rem 0.75rem;
   border-radius: var(--radius-pill);
-  box-shadow: 0 2px 8px rgba(116, 219, 78, 0.35);
+  box-shadow: 0 2px 8px rgba(43, 85, 59, 0.35);
   z-index: 5;
 }
 
@@ -1072,12 +1072,12 @@ h1, h2, h3, h4, h5, h6 {
 .why-tallow-content h2 {
   font-size: 2.85rem;
   margin-bottom: 1.25rem;
-  color: #142205;
+  color: #F9FAF8;
 }
 
 .why-tallow-content p.lead {
   font-size: 1.0625rem;
-  color: #1E3307;
+  color: rgba(249, 250, 248, 0.85);
   margin-bottom: 2rem;
   line-height: 1.65;
   font-weight: 500;
@@ -1127,15 +1127,15 @@ h1, h2, h3, h4, h5, h6 {
   gap: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
-  color: #142205;
-  border-bottom: 2px solid #142205;
+  color: #DDBF8E;
+  border-bottom: 2px solid #DDBF8E;
   padding-bottom: 3px;
   transition: all var(--transition-fast);
 }
 
 .learn-more-link:hover {
-  color: #000000;
-  border-color: #000000;
+  color: #F9FAF8;
+  border-color: #F9FAF8;
   gap: 0.75rem;
 }
 
@@ -1417,11 +1417,13 @@ h1, h2, h3, h4, h5, h6 {
   height: 48px;
   width: auto;
   margin-bottom: 1.25rem;
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
 }
 
 .footer-bio {
   font-size: 0.875rem;
-  color: var(--text-muted);
+  color: #D9DED6;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
@@ -1461,7 +1463,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-sans);
   font-size: 0.9375rem;
   font-weight: 700;
-  color: var(--text-dark);
+  color: #F9FAF8;
   margin-bottom: 1.25rem;
   letter-spacing: 0.02em;
 }
@@ -1474,23 +1476,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-nav a {
   font-size: 0.875rem;
-  color: var(--text-muted);
+  color: #D9DED6;
   transition: all var(--transition-fast);
 }
 
 .footer-nav a:hover {
-  color: var(--primary-olive);
+  color: #DDBF8E;
   padding-left: 4px;
 }
 
 .footer-bottom {
   padding-top: 2rem;
-  border-top: 1px solid var(--border-subtle);
+  border-top: 1px solid #7A9680;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 0.8125rem;
-  color: var(--text-muted);
+  color: #D9DED6;
 }
 
 .payment-methods {
