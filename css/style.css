@@ -1488,6 +1488,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   padding: 0.25rem 0.5rem;
   height: 26px;
+  color: #3A4A40;
 }
 
 .payment-badge svg {
