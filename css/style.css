@@ -1194,17 +1194,18 @@ h1, h2, h3, h4, h5, h6 {
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  background-color: var(--bg-olive-subtle);
+  background: rgba(183, 146, 103, 0.12);
+  border: 1px solid rgba(183, 146, 103, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-olive);
+  color: #B79267;
   margin-bottom: 1.35rem;
   transition: all var(--transition-smooth);
 }
 
 .feature-box:hover .feature-box-icon {
-  background-color: var(--primary-olive);
+  background-color: #B79267;
   color: #FFFFFF;
   transform: scale(1.1);
 }
