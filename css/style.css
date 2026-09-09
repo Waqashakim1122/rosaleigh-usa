@@ -1787,15 +1787,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-icon {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background-color: var(--bg-olive-subtle);
-  color: var(--primary-olive);
+  background: rgba(183, 146, 103, 0.12);
+  border: 1px solid rgba(183, 146, 103, 0.3);
+  color: #B79267;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+
+.contact-icon svg {
+  width: 20px;
+  height: 20px;
 }
 
 .contact-method-item h4 {
@@ -1959,10 +1965,11 @@ textarea.form-control {
 }
 
 .faq-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 4rem;
-  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 2.5rem;
 }
 
 .faq-list {
@@ -2029,16 +2036,21 @@ textarea.form-control {
 .faq-visual-card {
   background-color: var(--bg-olive-tint);
   border-radius: var(--radius-lg);
-  padding: 2.25rem;
-  position: relative;
+  padding: 2rem 2.5rem;
+  text-align: center;
 }
 
 .faq-visual-card p.featured-tip {
-  font-size: 0.9375rem;
+  font-size: 1.0625rem;
   font-weight: 500;
   color: var(--text-dark);
   line-height: 1.6;
-  margin-bottom: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.faq-visual-card p.featured-tip a {
+  color: #B79267;
+  font-weight: 700;
 }
 
 .faq-visual-card img {
