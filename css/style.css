@@ -601,7 +601,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 .hero-section {
   position: relative;
-  background: var(--lime-gradient);
+  background: var(--bg-footer);
   padding-top: 3.5rem;
   padding-bottom: 5.5rem;
   overflow: hidden;
@@ -846,7 +846,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .quick-action-btn:hover {
   background: var(--lime-gradient);
-  color: #142205;
+  color: #F9FAF8;
 }
 
 .product-details {
@@ -1058,7 +1058,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 .why-tallow-section {
   position: relative;
-  background: var(--lime-gradient);
+  background: var(--bg-footer);
   padding: 5.5rem 0;
   overflow: hidden;
 }
@@ -1499,7 +1499,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 .page-hero {
   padding: 3rem 0 4rem 0;
-  background: var(--lime-gradient);
+  background: var(--bg-footer);
   position: relative;
   overflow: hidden;
 }
